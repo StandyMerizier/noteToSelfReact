@@ -40,14 +40,7 @@ class App extends Component {
             <div>
                 <h2>Note to Self</h2>
                 <Form inline>
-                    <FormControl 
-                        onChange={event => this.setState({text: event.target.value}) } 
-                        onKeyPress={event => {
-                        if(event.key === 'Enter') {
-                          this.search();
-                        }
-                      }}
-                    />
+                    <FormControl onChange={event => this.setState({text: event.target.value}) } />
                     {' '}
                     <Button onClick={() => this.submit()}>Submit</Button>
                 </Form>
